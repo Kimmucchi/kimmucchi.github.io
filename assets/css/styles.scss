@@ -1,18 +1,1 @@
-// styles.scss
-
-// Import the main "jekflix" styles
-@import "jekflix";
-
-// Your custom styles go here
-
-// Override the hero section styles
-.hero {
-    background-size: cover; // Adjust as needed
-    height: 300px; // Adjust as needed
-
-    @media (max-width: 768px) {
-        height: 200px; // Adjust for smaller screens
-    }
-}
-
-// Add more custom styles as needed
+--- --- @import "jekflix";
