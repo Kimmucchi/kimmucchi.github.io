@@ -32,6 +32,8 @@ layout: main
             <h1 class="title">{{ featured.title }}</h1>
             <p class="description">{{ featured.subtitle }}</p>
             <div class="buttons">
+                <button class="lightboxBtn" data-lightboxid="heroLightbox">Open Sesame</button>
+                <!--
                 <a href="{{ featured.url | prepend: site.baseurl }}" role="button" class="button">
                     <svg>
                         <use xlink:href="#icon-read"></use>
@@ -39,10 +41,11 @@ layout: main
                     <span>{{ site.translations.button.read_now | default: "Made possible by the following people..."
                         }}</span>
                 </a>
+                -->
             </div>
         </div>
     </section>
-    <div class="lightbox">
+    <div id="heroLightbox" class="lightbox">
         <p>I'm testing some lightbox content.</p>
     </div>
     {% endif %}

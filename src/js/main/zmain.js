@@ -1,16 +1,20 @@
 (function ($, window, undefined) {
-  // Lightbox class
-  document.addEventListener('DOMContentLoaded', function () {
-    lightbox.option({
+
+  $(".lightboxBtn").click(function initializeLightbox() {
+    var openBtn = $(this);
+    var lightbox = $("#" + $(this).attr("data-lightboxid"));
+
+    // Initialize lightbox
+    lightbox2.option({
       'resizeDuration': 200,
       'wrapAround': true
     });
-  });
 
-  /*
-  $(".lightboxBtn").click(function (contentDiv) {
-    contentDiv.addClass("lightbox");
-  })*/
+    openBtn.addEventListener('click', function () {
+      // Open lightbox
+      lightbox2.open(lightbox);
+    });
+  });
 
   // Menu
   $("#menu").click(function () {
