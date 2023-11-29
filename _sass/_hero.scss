@@ -8,7 +8,7 @@
 
   @include media("<=sm") {
     background-attachment: fixed;
-    animation: panBackgroundHero 30s linear infinite;
+    animation: panBackgroundHero 25s linear infinite;
   }
 
   +#grid {
