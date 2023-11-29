@@ -11,6 +11,17 @@
     animation: panBackgroundHero 25s linear infinite;
   }
 
+  @keyframes panBackgroundHero {
+    0% {
+      background-position-y: 0;
+    }
+
+    100% {
+      background-position-y: 90%;
+      /* Adjusted to 90% for 90vh height */
+    }
+  }
+
   +#grid {
     margin-top: rem(-80px);
   }
