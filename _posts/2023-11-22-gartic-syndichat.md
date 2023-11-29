@@ -75,17 +75,17 @@ paginate: true
         <div class="content">
             <h1 class="title">Thank you to everyone who contributed!</h1>
             <table class="description">
-                <th class="subtitle" colspan="2"><br><br>Syndichat & Website Developers</th>
+                <th class="subtitle" colspan="2"><br>Syndichat & Website Developers</th>
                 <tr>
                     <th>kimmu</th>
                     <th>kerro</th>
                 </tr>
-                <th class="subtitle" colspan="2"><br><br>Event Masters</th>
+                <th class="subtitle" colspan="2"><br>Event Masters</th>
                 <tr>
                     <th>kimmu</th>
                     <th>obscure_yul</th>
                 </tr>
-                <th class="subtitle" colspan="2"><br><br>Quiz Professors</th>
+                <th class="subtitle" colspan="2"><br>Quiz Professors</th>
                 <tr>
                     <th>kimmu</th>
                     <th>j_enn_y</th>
@@ -93,7 +93,7 @@ paginate: true
                 <tr>
                     <th>ciniscinerem</th>
                 </tr>
-                <th class="subtitle" colspan="2"><br><br>Contributing Artists</th>
+                <th class="subtitle" colspan="2"><br>Contributing Artists</th>
                 <tr>
                     <th>akyren</th>
                     <th>alchemistake.</th>
@@ -121,7 +121,7 @@ paginate: true
                 <tr>
                     <th>zeiio.zeal</th>
                 </tr>
-                <th class="subtitle" colspan="2"><br><br>Syndichat & You~ &lt;3.</th>
+                <th class="subtitle" colspan="2"><br>Syndichat & You~ &lt;3.</th>
             </table>
             <th class="buttons" colspan="2">
                 <button class="closeLightboxBtn button" data-lightbox-id="heroLightbox">
