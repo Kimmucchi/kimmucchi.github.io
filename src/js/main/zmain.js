@@ -10,12 +10,28 @@
     lightbox = $("#" + $(this).attr("data-lightbox-id"));
     lightbox[0].style.display = "flex";
     document.body.style.overflow = "hidden";
+    window.scroll({
+      top: 0,
+      behavior: 'smooth'
+    });
   });
 
   $(".closeLightboxBtn").click(function () {
     lightbox = $("#" + $(this).attr("data-lightbox-id"));
     lightbox[0].style.display = "none";
     document.body.style.overflow = "auto";
+  });
+
+  $("#scrollDown").click(function () {
+    var nextSection = document.getElementById("grid");
+    if (nextSection) {
+      var offset = -100; // You can adjust this value based on your design
+      var targetScroll = nextSection.offsetTop + offset;
+      window.scroll({
+        top: targetScroll,
+        behavior: 'smooth'
+      });
+    }
   });
 
   // Menu

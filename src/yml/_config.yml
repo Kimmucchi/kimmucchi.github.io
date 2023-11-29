@@ -65,5 +65,25 @@ exclude: [
 # Theme
 version: v1.0.0
 
+#image sources
 data_sources:
   - _imgs
+
+#don't revise
+menu:
+  - title: Columbina Mains
+    url: https://discord.com/invite/signora
+  - title: Dottore Mains
+    url: https://discord.com/invite/signora
+  - title: Pantalone Mains
+    url: https://discord.com/invite/signora
+  - title: Pierro Mains
+    url: https://discord.com/invite/signora
+  - title: Pulcinella Mains
+    url: https://discord.com/invite/signora
+  - title: Sandrone Mains
+    url: https://discord.com/invite/signora
+  - title: Scaramouche Mains
+    url: https://discord.com/invite/signora
+  - title: Signora Mains
+    url: https://discord.com/invite/signora

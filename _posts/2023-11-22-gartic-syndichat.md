@@ -1,16 +1,15 @@
 ---
-date: 2018-11-22 12:26:40
+date: 2023-11-22 12:26:40
 layout: main
-title: Why books should be your priority?
-subtitle: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-image: https://res.cloudinary.com/dm7h7e8xj/image/upload/v1559822138/theme9_v273a9.jpg
-optimized_image: https://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_380/v1559822138/theme9_v273a9.jpg
-category: life
+title: Gartic with Syndichat!
+subtitle: Chaos and randomness unleashed.
+description: Chaos and randomness unleashed.
+image: https://d.furaffinity.net/art/p4nd4art/1695345739/1695345739.p4nd4art_garticbanner.jpg
+optimized_image: https://d.furaffinity.net/art/p4nd4art/1695345739/1695345739.p4nd4art_garticbanner.jpg
+category: Gartic Phone
 tags:
-  - books
-  - read
-author: mranderson
+  - funny
+  - art
 paginate: true
 ---
 
@@ -53,6 +52,12 @@ paginate: true
                     </svg>
                     <span>Credits</span>
                 </button>
+                <button id="scrollDown" class="button">
+                    <svg>
+                        <use xlink:href="#icon-read"></use>
+                    </svg>
+                    <span>See more</span>
+                </button>
                 <!--
                 <a href="{{ featured.url | prepend: site.baseurl }}" role="button" class="button">
                     <svg>
@@ -70,28 +75,53 @@ paginate: true
         <div class="content">
             <h1 class="title">Thank you to everyone who contributed!</h1>
             <table class="description">
-                <th class="subtitle" colspan="2"><br><br>Syndichat Developers</th>
+                <th class="subtitle" colspan="2"><br><br>Syndichat & Website Developers</th>
                 <tr>
                     <th>kimmu</th>
                     <th>kerro</th>
                 </tr>
-                <th class="subtitle" colspan="2"><br><br>Art Credit</th>
+                <th class="subtitle" colspan="2"><br><br>Event Masters</th>
                 <tr>
-                    <th>ciniscinerem</th>
-                    <th>ciniscinerem</th>
+                    <th>kimmu</th>
+                    <th>obscure_yul</th>
+                </tr>
+                <th class="subtitle" colspan="2"><br><br>Quiz Professors</th>
+                <tr>
+                    <th>kimmu</th>
+                    <th>j_enn_y</th>
                 </tr>
                 <tr>
-                    <th>trexcien</th>
+                    <th>ciniscinerem</th>
+                </tr>
+                <th class="subtitle" colspan="2"><br><br>Contributing Artists</th>
+                <tr>
+                    <th>akyren</th>
+                    <th>alchemistake.</th>
+                </tr>
+                <tr>
+                    <th>antimekii</th>
+                    <th>c0ffee_0bsession</th>
+                </tr>
+                <tr>
+                    <th>chaivou</th>
+                    <th>charlight</th>
+                </tr>
+                <tr>
+                    <th>ciniscinerem</th>
+                    <th>kimmu</th>
+                </tr>
+                <tr>
+                    <th>obscure_yul</th>
                     <th>silvermoonwolf</th>
                 </tr>
                 <tr>
-                    <th>akyren</th>
-                    <th>zeiio.zeal</th>
+                    <th>trexcien</th>
+                    <th>toutetsu</th>
                 </tr>
                 <tr>
-                    <th>charlight</th>
-                    <th>kimmu</th>
+                    <th>zeiio.zeal</th>
                 </tr>
+                <th class="subtitle" colspan="2"><br><br>Syndichat & You~ &lt;3.</th>
             </table>
             <th class="buttons" colspan="2">
                 <button class="closeLightboxBtn button" data-lightbox-id="heroLightbox">
