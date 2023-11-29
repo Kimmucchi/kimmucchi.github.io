@@ -1,8 +1,8 @@
 ---
 date: 2023-11-11
 layout: post
-title: Welcome to the desert of the real
-subtitle: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
+title: The Harbinger Syndicate Anniversary Memoirs 2023
+subtitle: 'Powered by the Syndicate Directress, Kimmu'
 description: >-
   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
   tempor incididunt ut labore et dolore magna aliqua.
