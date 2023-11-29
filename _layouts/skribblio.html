@@ -1,6 +1,10 @@
 ---
 layout: main
+styles:
+- gartic
 ---
+
+{% assign gif_urls = site.data.gifs | strip_newlines | split: '\n' %}
 
 {% if site.paginate %}
 {% assign posts = paginator.posts | where_exp:"post","post.is_generated != true" %}
@@ -18,7 +22,8 @@ layout: main
     {% if site.show_hero and paginator == nil or paginator.page == 1 %}
     <!-- Hero -->
     {% assign featured = posts.first %}
-    <section class="hero" style="background-image: url({{ featured.image }})">
+    <section class="hero"
+        style="background-image: url('https://d.furaffinity.net/art/p4nd4art/1695345739/1695345739.p4nd4art_garticbanner.jpg')">
         <div class="pixels"></div>
         <div class="gradient"></div>
         <div class="content">
@@ -91,56 +96,13 @@ layout: main
     {% endif %}
     <!-- Posts -->
     <section id="grid" class="row flex-grid">
-        {% for post in posts offset: offset %}
+        {% for gif_url in gif_urls offset: offset %}
         <article class="box-item">
-            <span class="category">
-                <a href="{{ site.baseurl }}/{{ site.categories_folder | default: 'category' }}/{{ post.category }}">
-                    <span>{{ post.category }}</span>
-                </a>
-            </span>
             <div class="box-body">
-                <a class="cover" href="{{ site.baseurl }}/home.html">
-                    {% include loader.html %}
-                    {% if post.optimized_image %}
-                    <img src="/assets/img/placeholder.png" width="100%" data-url="{{ post.optimized_image }}"
-                        class="preload">
-                    <noscript>
-                        <img src="{{ post.optimized_image }}" width="100%">
-                    </noscript>
-                    {% elsif post.image %}
-                    <img src="/assets/img/placeholder.png" width="100%" data-url="{{ post.image }}" class="preload">
-                    <noscript>
-                        <img src="{{ post.image }}" width="100%">
-                    </noscript>
-                    {% else %}
-                    <img src="/assets/img/placeholder.png" width="100%" data-url="/assets/img/off.jpg" class="preload">
-                    <noscript>
-                        <img src="/assets/img/off.jpg" width="100%">
-                    </noscript>
-                    {% endif %}
-                    {% include new-post-tag.html date=post.date %}
-                    {% include read-icon.html %}
+                <a class="cover" href="{{ gif_url }}" data-lightbox="img-gallery" data-title="GIF">
+                    <!-- You can customize this part based on your needs -->
+                    <img src="{{ gif_url }}" width="100%" class="preload">
                 </a>
-                <div class="box-info">
-                    <time datetime="{{ post.date | date_to_xmlschema }}" class="date">
-                        {% include date.html date=post.date %}
-                    </time>
-                    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
-                        <h2 class="post-title">
-                            {{ post.title }}
-                        </h2>
-                    </a>
-                    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
-                        <p class="description">{{ post.description }}</p>
-                    </a>
-                    <div class="tags">
-                        {% for tag in post.tags %}
-                        {% if tag != "" %}
-                        <a href="{{ site.baseurl}}/tags/#{{tag | slugify }}">#{{ tag }}</a>
-                        {% endif %}
-                        {% endfor %}
-                    </div>
-                </div>
             </div>
         </article>
         {% endfor %}
@@ -150,6 +112,7 @@ layout: main
     {% include pagination-home.html %}
     {% endif %}
 </main>
+
 
 {% assign social_urls = '' %}
 {% if site.github_username %}
