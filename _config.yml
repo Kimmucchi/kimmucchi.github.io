@@ -11,14 +11,22 @@ tags:
   - netlify
 show_hero: true
 menu:
-  - title: Home
-    url: /
-  - title: About
-    url: /about
-  - title: Contact
-    url: /contact
-  - title: Feed
-    url: /feed.xml
+  - title: Columbina Mains
+    url: https://discord.com/invite/signora
+  - title: Dottore Mains
+    url: https://discord.com/invite/signora
+  - title: Pantalone Mains
+    url: https://discord.com/invite/signora
+  - title: Pierro Mains
+    url: https://discord.com/invite/signora
+  - title: Pulcinella Mains
+    url: https://discord.com/invite/signora
+  - title: Sandrone Mains
+    url: https://discord.com/invite/signora
+  - title: Scaramouche Mains
+    url: https://discord.com/invite/signora
+  - title: Signora Mains
+    url: https://discord.com/invite/signora
 email: youremail@test.com
 # See: https://disqus.com/
 disqus_username: disqus_username
