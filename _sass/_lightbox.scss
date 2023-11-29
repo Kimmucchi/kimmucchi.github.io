@@ -1,0 +1,118 @@
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  justify-content: center;
+  align-items: center;
+
+  .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    padding-left: 5%;
+
+    @include media(">=sm") {
+      width: 75%;
+    }
+
+    table {
+      margin: 0 auto;
+      width: 75%; // Make tables fill the entire width
+
+      @include media(">=sm") {
+        margin: rem(5px) auto;
+      }
+    }
+
+    .date {
+      font-size: rem(16px);
+      color: rgba(255, 255, 255, 0.75);
+    }
+
+    .title {
+      text-align: center;
+      font-size: rem(30px);
+      color: #fff;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+      margin: rem(10px) 0;
+
+      @include media(">=sm") {
+        font-size: rem(35px);
+      }
+    }
+
+    .subtitle {
+      font-size: rem(22px);
+      color: #fff;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+      text-align: center;
+
+      @include media(">=sm") {
+        font-size: rem(26px);
+      }
+    }
+
+    .description {
+      font-size: rem(18px);
+      color: #fff;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+
+      @include media(">=sm") {
+        font-size: rem(22px);
+      }
+    }
+
+    .description th {
+      margin-top: rem(20px);
+    }
+
+    .buttons {
+      margin-top: rem(50px);
+    }
+
+    .button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: rem(12px);
+      font-weight: bold;
+      color: #fff;
+      text-decoration: none;
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: rem(5px);
+      padding: rem(10px) rem(15px);
+      transition: all 0.3s;
+      margin: rem(30px) auto;
+
+      @include media(">=sm") {
+        font-size: rem(18px);
+      }
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.5);
+        box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.2);
+      }
+
+      svg {
+        width: rem(25px);
+        height: rem(25px);
+        margin-right: rem(10px);
+        vertical-align: middle;
+        color: $themeColor;
+      }
+
+      span {
+        vertical-align: middle;
+      }
+
+    }
+  }
+
+}

@@ -1,17 +1,16 @@
 (function ($, window, undefined) {
 
-  document.addEventListener('DOMContentLoaded', function () {
-    // Find the button and lightbox content
-    var openButton = document.getElementById('openLightboxButton');
-    var lightboxContent = document.getElementById('lightboxContent');
+  // Lightbox
+  $(".openLightboxBtn").click(function () {
+    lightbox = $("#" + $(this).attr("data-lightbox-id"));
+    lightbox[0].style.display = "flex";
+    document.body.style.overflow = "hidden";
+  });
 
-    // Attach a click event to the button
-    openButton.addEventListener('click', function () {
-      // Show the lightbox with the specified content
-      lightbox.options.fadeDuration = 200;
-      lightbox.options.resizeDuration = 200;
-      lightbox.show(lightboxContent.innerHTML);
-    });
+  $(".closeLightboxBtn").click(function () {
+    lightbox = $("#" + $(this).attr("data-lightbox-id"));
+    lightbox[0].style.display = "none";
+    document.body.style.overflow = "auto";
   });
 
   // Menu

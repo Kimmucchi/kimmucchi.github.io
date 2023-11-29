@@ -1,17 +1,31 @@
----
-layout: compress
----
-
 <!DOCTYPE html>
 <html lang="{{ site.language }}" class="no-js">
-    {% include head.html %}
-    <body class="has-push-menu">
-        {% include svg-icons.html %}
-        {% include header.html %}
-            <section class="content">
-                {{ content }}
-            </section>
-        {% include footer.html %}
-    </body>
-</html>
 
+{% include head.html %}
+
+<body class="has-push-menu">
+
+    {% include svg-icons.html %}
+    {% include header.html %}
+
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Include Lightbox CSS from CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+
+    <!-- Include Fancybox JS from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+    <!-- Include Lightbox JS from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+    <section class="content">
+        {{ content }}
+    </section>
+
+    {% include footer.html %}
+
+</body>
+
+</html>
