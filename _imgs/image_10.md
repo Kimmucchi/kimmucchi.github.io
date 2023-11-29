@@ -1,5 +1,0 @@
----
-date: 2023-11-29
-image: >-
-  https://cdn.discordapp.com/attachments/1178442262041084034/1178442517893611600/album_2023-11-26_15-20-32.gif?ex=6576291e&is=6563b41e&hm=79d8ff0143e25613afd5e5d887ba80985bd907fec8cea5a2aedc73096a5080d3&
----
