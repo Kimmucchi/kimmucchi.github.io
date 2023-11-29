@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="{{ site.language }}" class="no-js">
+{% include head.html %}
+
+<body class="has-push-menu">
+    {% include minutes-to-read.html %}
+    {% include svg-icons.html %}
+    {% include header.html %}
+
+    <section class="post {% if site.two_columns_layout %}two-columns{% else %}one-column{% endif %}">
+        <article role="article" class="post-content">
+            <p class="post-info">
+                {% if img.date %}
+                <svg class="icon-calendar" id="date">
+                    <use xlink:href="#icon-calendar"></use>
+                </svg>
+                <time class="date" datetime="{{ img.date | date_to_xmlschema }}">
+                    {% include date.html date=img.date %}
+                </time>
+                {% endif %}
+            </p>
+
+            {% if img.image %}
+            <img src="{{ img.image }}" alt="Image" class="post-cover">
+            {% endif %}
+
+            {{ content }}
+        </article>
+    </section>
+
+    {% if site.two_columns_layout %}
+    <aside class="see-also">
+        <h2>{{ site.translations.text.see_also | default: "See also" }}</h2>
+        <!-- Add logic for related images if needed -->
+    </aside>
+    {% endif %}
+
+    {% include time-bar.html %}
+    {% include recommendation.html %}
+    {% include subscription.html %}
+    {% include share.html %}
+    {% include author.html %}
+    {% include comments.html %}
+    {% include footer.html %}
+</body>
+
+</html>

@@ -1,8 +1,8 @@
 ---
 date: 2023-11-11
 layout: post
-title: Syndicate Anniversary Memoirs 2023
-subtitle: 'Powered by the Syndicate Directress, Kimmu'
+title: Anniversary Memoirs 2023
+subtitle: '[Scroll Down] Powered by the Syndicate Directress, Kimmu'
 description: >-
   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
   tempor incididunt ut labore et dolore magna aliqua.
