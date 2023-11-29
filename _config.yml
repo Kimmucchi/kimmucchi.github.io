@@ -1,6 +1,6 @@
 # Site Settings
-name: Jekflix
-title: Jekflix | A blog theme for Jekyll
+name: The Harbinger Syndicate
+title: The Harbinger Syndicate | A blog theme for Jekyll
 description: Jekflix is a template for Jekyll inspired by Netflix and made by
   Thiago Rossener.
 tags:
@@ -105,4 +105,4 @@ exclude: [
 ]
 
 # Theme
-version: v3.1.2
+version: v1.0.0
