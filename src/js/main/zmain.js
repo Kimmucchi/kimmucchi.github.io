@@ -1,5 +1,10 @@
 (function ($, window, undefined) {
 
+  // Fancybox
+  Fancybox.bind("[data-fancybox]", {
+    // Your custom options
+  });
+
   // Lightbox
   $(".openLightboxBtn").click(function () {
     lightbox = $("#" + $(this).attr("data-lightbox-id"));

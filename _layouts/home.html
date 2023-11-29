@@ -1,5 +1,7 @@
 ---
 layout: main
+styles:
+- hero
 ---
 
 {% if site.paginate %}
@@ -99,7 +101,7 @@ layout: main
                 </a>
             </span>
             <div class="box-body">
-                <a class="cover" href="{{ site.baseurl }}/home.html">
+                <a class="cover" href="{{ post.url | prepend: site.baseurl }}">
                     {% include loader.html %}
                     {% if post.optimized_image %}
                     <img src="/assets/img/placeholder.png" width="100%" data-url="{{ post.optimized_image }}"
