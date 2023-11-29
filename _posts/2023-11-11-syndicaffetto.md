@@ -47,14 +47,14 @@ author: mranderson
             <p class="description">{{ featured.subtitle }}</p>
             <div class="buttons">
                 <button class="openLightboxBtn button" data-lightbox-id="heroLightbox">
-                    <svg>
-                        <use xlink:href="#icon-read"></use>
+                    <svg width="25" height="25" xmlns="http://www.w3.org/2000/svg">
+                        <image href="/assets/img/synblue.svg" width="25" height="25" />
                     </svg>
                     <span>Credits</span>
                 </button>
                 <button id="scrollDown" class="button">
-                    <svg>
-                        <use xlink:href="#icon-read"></use>
+                    <svg width="25" height="25" xmlns="http://www.w3.org/2000/svg">
+                        <image href="/assets/img/synred.svg" width="25" height="25" />
                     </svg>
                     <span>See more</span>
                 </button>
@@ -73,55 +73,78 @@ author: mranderson
     <!-- Edit Credits Here -->
     <div id="heroLightbox" class="lightbox">
         <div class="content">
-            <h1 class="title">Thank you to everyone who contributed!</h1>
             <table class="description">
-                <th class="subtitle" colspan="2"><br>Syndichat & Website Developers</th>
                 <tr>
-                    <th>kimmu</th>
-                    <th>kerro</th>
+                    <th class="title" colspan="2">Thank you to everyone who contributed!</th>
+                </tr>
+                <tr>
+                    <th class="subtitle" colspan="2"><br>Syndichat & Website Developers</th>
+                </tr>
+                <tr>
+                    <td>kimmu</td>
+                    <td>kerro</td>
                 </tr>
                 <th class="subtitle" colspan="2"><br>Event Masters</th>
                 <tr>
-                    <th>kimmu</th>
-                    <th>obscure_yul</th>
+                    <td>kimmu</td>
+                    <td>obscure_yul</td>
                 </tr>
                 <th class="subtitle" colspan="2"><br>Quiz Professors</th>
                 <tr>
-                    <th>kimmu</th>
-                    <th>j_enn_y</th>
+                    <td>kimmu</td>
+                    <td>j_enn_y</td>
                 </tr>
                 <tr>
-                    <th>ciniscinerem</th>
-                </tr>
-                <th class="subtitle" colspan="2"><br>Contributing Artists</th>
-                <tr>
-                    <th>akyren</th>
-                    <th>alchemistake.</th>
+                    <td>ciniscinerem</td>
                 </tr>
                 <tr>
-                    <th>antimekii</th>
-                    <th>c0ffee_0bsession</th>
+                    <th class="subtitle" colspan="2"><br>Contributing Artists</th>
                 </tr>
                 <tr>
-                    <th>chaivou</th>
-                    <th>charlight</th>
+                    <td>akyren</td>
+                    <td>alchemistake.</td>
                 </tr>
                 <tr>
-                    <th>ciniscinerem</th>
-                    <th>kimmu</th>
+                    <td>antimekii</td>
+                    <td>c0ffee_0bsession</td>
                 </tr>
                 <tr>
-                    <th>obscure_yul</th>
-                    <th>silvermoonwolf</th>
+                    <td>chaivou</td>
+                    <td>charlight</td>
                 </tr>
                 <tr>
-                    <th>trexcien</th>
-                    <th>toutetsu</th>
+                    <td>ciniscinerem</td>
+                    <td>kimmu</td>
                 </tr>
                 <tr>
-                    <th>zeiio.zeal</th>
+                    <td>obscure_yul</td>
+                    <td>silvermoonwolf</td>
                 </tr>
-                <th class="subtitle" colspan="2"><br>Syndichat & You~ &lt;3.</th>
+                <tr>
+                    <td>trexcien</td>
+                    <td>toutetsu</td>
+                </tr>
+                <tr>
+                    <td>zeiio.zeal</td>
+                </tr>
+                <tr>
+                    <th class="subtitle" colspan="2"><br>Prize Donors</th>
+                </tr>
+                <tr>
+                    <td>kimmu</td>
+                    <td>ciniscinerem</td>
+                </tr>
+                <tr>
+                    <td>sheepybeeby</td>
+                    <td>jdbaby</td>
+                </tr>
+                <tr>
+                    <td>crack_n_tea</td>
+                    <td>sunsosol</td>
+                </tr>
+                <tr>
+                    <th class="subtitle" colspan="2"><br>Syndichat & You~ &lt;3.</th>
+                </tr>
             </table>
             <th class="buttons" colspan="2">
                 <button class="closeLightboxBtn button" data-lightbox-id="heroLightbox">
