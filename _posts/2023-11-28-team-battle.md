@@ -1,15 +1,16 @@
 ---
-date: 2023-11-22 12:26:40
+date: 2023-11-28 12:26:40
 layout: main
-title: Gartic with Syndichat!
-subtitle: Chaos and randomness unleashed.
-description: Chaos and randomness unleashed.
-image: https://d.furaffinity.net/art/p4nd4art/1695345739/1695345739.p4nd4art_garticbanner.jpg
-optimized_image: https://d.furaffinity.net/art/p4nd4art/1695345739/1695345739.p4nd4art_garticbanner.jpg
-category: Gartic Phone
+title: Syndicate Team Battle
+subtitle: Syndichat's favorite grind!
+description:  Syndichat's favorite grind!
+image: https://media.discordapp.net/attachments/1082781838935859240/1179194056211955762/SyndicateGroupBanner2.png
+optimized_image: https://media.discordapp.net/attachments/1082781838935859240/1179194056211955762/SyndicateGroupBanner2.png
+category: November 21 - November 28, 2023
 tags:
-  - funny
-  - art
+  - event
+  - harbingers
+  - love
 paginate: true
 ---
 
@@ -30,9 +31,9 @@ paginate: true
 <main class="home {% if site.show_hero and paginator == nil or paginator.page == 1 %}no-padding{% endif %}" role="main">
     {% if site.show_hero and paginator == nil or paginator.page == 1 %}
     <!-- Hero -->
-    {% assign featured = posts.first %}
+    {% assign featured = posts[0] %}
     <section class="hero"
-        style="background-image: url('https://d.furaffinity.net/art/p4nd4art/1695345739/1695345739.p4nd4art_garticbanner.jpg')">
+        style="background-image: url('https://media.discordapp.net/attachments/1082781838935859240/1179194056211955762/SyndicateGroupBanner2.png')">
         <div class="pixels"></div>
         <div class="gradient"></div>
         <div class="content">
@@ -56,7 +57,7 @@ paginate: true
                     <svg width="25" height="25" xmlns="http://www.w3.org/2000/svg">
                         <image href="/assets/img/synred.svg" width="25" height="25" />
                     </svg>
-                    <span>See more</span>
+                    <span>Memory Album</span>
                 </button>
                 <!--
                 <a href="{{ featured.url | prepend: site.baseurl }}" role="button" class="button">
@@ -159,12 +160,12 @@ paginate: true
     {% endif %}
     <!-- Posts -->
     <section id="grid" class="row flex-grid">
-        {% for gif_url in gif_urls offset: offset %}
+        {% for battle_url in site.data.battles.battles %}
         <article class="box-item">
             <div class="box-body">
-                <a class="cover" data-fancybox href="{{ gif_url }}" data-lightbox="img-gallery" data-title="GIF">
+                <a class="cover" data-fancybox href="{{ battle_url }}" data-lightbox="img-gallery" data-title="Battle">
                     <!-- You can customize this part based on your needs -->
-                    <img src="{{ gif_url }}" width="100%" class="preload">
+                    <img src="{{ battle_url }}" width="100%" class="preload">
                 </a>
             </div>
         </article>

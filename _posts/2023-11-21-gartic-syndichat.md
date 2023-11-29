@@ -1,8 +1,20 @@
 ---
+date: 2023-11-21 12:26:40
 layout: main
-styles:
-- hero
+title: Gartic with Syndichat!
+subtitle: Chaos and randomness unleashed.
+description: Chaos and randomness unleashed.
+image: https://d.furaffinity.net/art/p4nd4art/1695345739/1695345739.p4nd4art_garticbanner.jpg
+optimized_image: https://d.furaffinity.net/art/p4nd4art/1695345739/1695345739.p4nd4art_garticbanner.jpg
+category: Gartic Phone
+tags:
+  - funny
+  - art
+  - social
+paginate: true
 ---
+
+{% assign gif_urls = site.data.gifs | strip_newlines | split: '\n' %}
 
 {% if site.paginate %}
 {% assign posts = paginator.posts | where_exp:"post","post.is_generated != true" %}
@@ -19,16 +31,21 @@ styles:
 <main class="home {% if site.show_hero and paginator == nil or paginator.page == 1 %}no-padding{% endif %}" role="main">
     {% if site.show_hero and paginator == nil or paginator.page == 1 %}
     <!-- Hero -->
+    {% assign featured = posts[3] %}
     <section class="hero"
-        style="background-image: url(https://media.discordapp.net/attachments/1082781838935859240/1179194056211955762/SyndicateGroupBanner2.png)">
+        style="background-image: url('https://d.furaffinity.net/art/p4nd4art/1695345739/1695345739.p4nd4art_garticbanner.jpg')">
         <div class="pixels"></div>
         <div class="gradient"></div>
         <div class="content">
-            <time datetime="2023-11-20 12:26:40" class="date">
-                11.20.2023
+            <time datetime="{{ featured.date | date_to_xmlschema }}" class="date">
+                {% if site.date_format == nil %}
+                {{ featured.date | date: "%m.%d.%Y" }}
+                {% else %}
+                {{ featured.date | date: site.date_format }}
+                {% endif %}
             </time>
-            <h1 class="title">Anniversary Memoirs 2023</h1>
-            <p class="description">𝘗𝘰𝘸𝘦𝘳𝘦𝘥 𝘣𝘺 𝘵𝘩𝘦 𝘚𝘺𝘯𝘥𝘪𝘤𝘢𝘵𝘦 𝘋𝘪𝘳𝘦𝘤𝘵𝘳𝘦𝘴𝘴
+            <h1 class="title">{{ featured.title }}</h1>
+            <p class="description">{{ featured.subtitle }}</p>
             <div class="buttons">
                 <button class="openLightboxBtn button" data-lightbox-id="heroLightbox">
                     <svg width="25" height="25" xmlns="http://www.w3.org/2000/svg">
@@ -143,56 +160,13 @@ styles:
     {% endif %}
     <!-- Posts -->
     <section id="grid" class="row flex-grid">
-        {% for post in posts %}
+        {% for gif_url in gif_urls offset: offset %}
         <article class="box-item">
-            <span class="category">
-                <a href="{{ site.baseurl }}/{{ site.categories_folder | default: 'category' }}/{{ post.category }}">
-                    <span>{{ post.category }}</span>
-                </a>
-            </span>
             <div class="box-body">
-                <a class="cover" href="{{ post.url | prepend: site.baseurl }}">
-                    {% include loader.html %}
-                    {% if post.optimized_image %}
-                    <img src="/assets/img/placeholder.png" width="100%" data-url="{{ post.optimized_image }}"
-                        class="preload">
-                    <noscript>
-                        <img src="{{ post.optimized_image }}" width="100%">
-                    </noscript>
-                    {% elsif post.image %}
-                    <img src="/assets/img/placeholder.png" width="100%" data-url="{{ post.image }}" class="preload">
-                    <noscript>
-                        <img src="{{ post.image }}" width="100%">
-                    </noscript>
-                    {% else %}
-                    <img src="/assets/img/placeholder.png" width="100%" data-url="/assets/img/off.jpg" class="preload">
-                    <noscript>
-                        <img src="/assets/img/off.jpg" width="100%">
-                    </noscript>
-                    {% endif %}
-                    {% include new-post-tag.html date=post.date %}
-                    {% include read-icon.html %}
+                <a class="cover" data-fancybox href="{{ gif_url }}" data-lightbox="img-gallery" data-title="GIF">
+                    <!-- You can customize this part based on your needs -->
+                    <img src="{{ gif_url }}" width="100%" class="preload">
                 </a>
-                <div class="box-info">
-                    <time datetime="{{ post.date | date_to_xmlschema }}" class="date">
-                        {% include date.html date=post.date %}
-                    </time>
-                    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
-                        <h2 class="post-title">
-                            {{ post.title }}
-                        </h2>
-                    </a>
-                    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
-                        <p class="description">{{ post.description }}</p>
-                    </a>
-                    <div class="tags">
-                        {% for tag in post.tags %}
-                        {% if tag != "" %}
-                        <a href="{{ site.baseurl}}/tags/#{{tag | slugify }}">#{{ tag }}</a>
-                        {% endif %}
-                        {% endfor %}
-                    </div>
-                </div>
             </div>
         </article>
         {% endfor %}
@@ -202,6 +176,7 @@ styles:
     {% include pagination-home.html %}
     {% endif %}
 </main>
+
 
 {% assign social_urls = '' %}
 {% if site.github_username %}

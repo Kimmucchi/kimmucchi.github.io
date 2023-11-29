@@ -10,7 +10,8 @@ category: Syndicaffetto!
 tags:
   - harbingers
   - love
-author: mranderson
+  - event
+paginate: true
 ---
 
 {% assign gif_urls = site.data.gifs | strip_newlines | split: '\n' %}
@@ -30,7 +31,7 @@ author: mranderson
 <main class="home {% if site.show_hero and paginator == nil or paginator.page == 1 %}no-padding{% endif %}" role="main">
     {% if site.show_hero and paginator == nil or paginator.page == 1 %}
     <!-- Hero -->
-    {% assign featured = posts.first %}
+    {% assign featured = posts[4] %}
     <section class="hero"
         style="background-image: url('https://media.discordapp.net/attachments/1179488569434308718/1179492720536977478/syndicaffetto.png')">
         <div class="pixels"></div>
@@ -56,7 +57,7 @@ author: mranderson
                     <svg width="25" height="25" xmlns="http://www.w3.org/2000/svg">
                         <image href="/assets/img/synred.svg" width="25" height="25" />
                     </svg>
-                    <span>See more</span>
+                    <span>Memory Album</span>
                 </button>
                 <!--
                 <a href="{{ featured.url | prepend: site.baseurl }}" role="button" class="button">
