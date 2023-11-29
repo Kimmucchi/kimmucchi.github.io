@@ -71,12 +71,16 @@
   }
 }
 
-@keyframes panBackgroundRight {
+@keyframes panBackgroundHero {
   0% {
     background-position: left center;
   }
 
-  100% {
+  50% {
     background-position: right center;
+  }
+
+  100% {
+    background-position: left center;
   }
 }

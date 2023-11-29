@@ -7,7 +7,8 @@
   height: 100vh;
 
   @include media("<=sm") {
-    animation: panBackgroundRight 20s linear infinite;
+    background-attachment: fixed;
+    animation: panBackgroundHero 20s linear infinite;
   }
 
   +#grid {
