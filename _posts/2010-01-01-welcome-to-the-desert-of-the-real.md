@@ -1,7 +1,7 @@
 ---
 date: 2023-11-11
 layout: post
-title: The Harbinger Syndicate Anniversary Memoirs 2023
+title: Syndicate Anniversary Memoirs 2023
 subtitle: 'Powered by the Syndicate Directress, Kimmu'
 description: >-
   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
