@@ -16,7 +16,9 @@
     {% if page.image %}
     {% assign image = page.image %}
     {% else %}
-    {% assign image = "/assets/img/blog-image.png" | prepend: site.baseurl | prepend: site.url %}
+    {% assign image =
+    "https://media.discordapp.net/attachments/1082781838935859240/1179194056211955762/SyndicateGroupBanner2.png" |
+    prepend: site.baseurl | prepend: site.url %}
     {% endif %}
 
     {% assign description = '' %}
